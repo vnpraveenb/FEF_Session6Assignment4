@@ -1,3 +1,7 @@
+/*
+    Create a JavaScript logic to dynamically display the number of table row and column.
+*/
+
 var table = document.getElementById("mytable");
 
  

@@ -11,9 +11,9 @@
         <h2> Dynamically Add Rows and Columns </h2> <!-- Heading for the page -->
         <hr>
     
-        <table  id="mytable" border="1">
-            <thead>
-                <tr class="table-header">
+        <table  id="mytable" border="1">  <!-- Creating Table in the page -->
+            <thead>                    
+                <tr>    <!-- Table Header Row -->      
                     <th>No.</th>
                     <th>Course Code</th>
                     <th>Course Name</th>
@@ -30,16 +30,15 @@
         </table>
 
         <br>
-        <input type="text" id="row"></input>
-        
-        <button onclick="addRow()">Add Row</button>
-        <button onclick="removeRow()">Remove Row</button>
+
+        <input type="text" id="row"></input> <!-- Text Area to input the required number of rows -->      
+        <button onclick="addRow()">Add Row</button> <!-- Button to add required number of rows from text area-->  
+        <button onclick="removeRow()">Remove Row</button> <!-- Button to remove a row--> 
     
         <br> <br>
-        <input type="text" id="col"></input>
-        
-        <button onclick="addCol()">Add Column</button>   
-        <button onclick="removeCol()">Remove Column</button>
+        <input type="text" id="col"></input><!-- Text Area to input the required number of columns -->  
+        <button onclick="addCol()">Add Column</button>   <!-- Button to add required number of columns from text area--> 
+        <button onclick="removeCol()">Remove Column</button> <!-- Button to remove a column--> 
         
         <!-- The code is written in an external javascript file -->
         <script src="table.js"></script> 
