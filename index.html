@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--  
+    Create a JavaScript logic to dynamically display the number of table row and column.
+ -->
+<html lang="en">
+    <head>
+            <title> Dynamically Add Rows and Columns </title> <!-- Title of the page -->
+          
+    </head>
+    <body>
+        <h2> Dynamically Add Rows and Columns </h2> <!-- Heading for the page -->
+        <hr>
+    
+        <table  id="mytable" border="1">
+            <thead>
+                <tr class="table-header">
+                    <th>No.</th>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ABC</td>
+                    <td>EFG</td>
+                </tr>
+            </tbody> 
+        </table>
+
+        <br>
+        <input type="text" id="row"></input>
+        
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="removeRow()">Remove Row</button>
+    
+        <br> <br>
+        <input type="text" id="col"></input>
+        
+        <button onclick="addCol()">Add Column</button>   
+        <button onclick="removeCol()">Remove Column</button>
+        
+        <!-- The code is written in an external javascript file -->
+        <script src="table.js"></script> 
+        
+    </body>
+</html>
